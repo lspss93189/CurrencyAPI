@@ -24,7 +24,7 @@ public class CoindeskController {
         return coindeskService.callCoindeskApi();
     }
 
-    @PostMapping("/transformed")
+    @GetMapping("/transformed")
     public CoindeskTransformedRsDto getTransformedData(){
         return coindeskService.transformData();
     }
